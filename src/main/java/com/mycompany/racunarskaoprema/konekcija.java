@@ -5,9 +5,9 @@ import java.sql.SQLException;
 
 public class konekcija {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/racunarska_oprema"; // Zameniti sa imenom tvoje baze
-        String user = "root"; // Tvoje korisničko ime za MySQL
-        String password = ""; // Tvoja lozinka za MySQL
+        String url = "jdbc:mysql://localhost:3306/racunarska_oprema";
+        String user = "root";
+        String password = "";
 
         try (Connection conn = DriverManager.getConnection(url, user, password)) {
             System.out.println("Konekcija uspešno uspostavljena!");
